@@ -5,7 +5,7 @@ import { connect } from 'cloudflare:sockets';
 // [Windows] Press "Win + R", input cmd and run:  Powershell -NoExit -Command "[guid]::NewGuid()"
 let userID = 'd342d11e-d424-4583-b36e-524ab1f0afa4';
 
-const พร็อกซีไอพีs = ['8.222.193.65', '8.219.201.245', '8.219.210.64'];
+const พร็อกซีไอพีs = [''];
 
 // if you want to use ipv6 or single พร็อกซีไอพี, please add comment at this line and remove comment at the next line
 let พร็อกซีไอพี = พร็อกซีไอพีs[Math.floor(Math.random() * พร็อกซีไอพีs.length)];
@@ -714,7 +714,7 @@ ${วเลสMain}\n
 <br />`;
 	}).join('\n');
 	const output2 = userIDArray.map((userID) => {
-		const วเลสSec = atob(pt) + '://' + userID + atob(at) + พร็อกซีไอพี + commonUrlPart1;
+		const วเลสSec = atob(pt) + '://' + userID + atob(at) + hostName + commonUrlPart1;
 		return `<br /><h5>Vless80</h5>----------------\n
 ${วเลสSec}\n
 <button class="border border-3 border-success rounded-4 fw-bold" style="width: 180px; height: 30px;" onclick='copyToClipboard("${วเลสSec}")'><i>Copy Vless 80</i></button>
@@ -732,7 +732,7 @@ ${วเลสSec}\n
 		<li id="sec">..</li>
   	</ul>
 	<br />
-	<p class="animation fw-bold text-danger mt-2"><i style="height: 30px;">VLESS FREE CLOUDFLARE</i></p>
+	<p class="animation fw-bold text-danger mt-2"><i style="height: 30px;">VLESS FREE CLOUDFLARE by REINZ</i></p>
 </div>`;
 	// HTML Head with CSS and FontAwesome library
 	const htmlHead = `
